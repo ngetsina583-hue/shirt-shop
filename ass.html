@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Shirt Shop</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="ass.css">
+</head>
+<body>
+
+<header>
+  <h1>👕 Shirt Shop</h1>
+</header>
+
+<section class="products">
+
+  <div class="product">
+    <img src="c:\Users\User\Pictures\shirt1.jpg" alt="Black Shirt">
+    <h3>T-Shirt</h3>
+    <p>$10</p>
+
+    <select id="size1">
+      <option>S</option><option>M</option><option>L</option><option>XL</option>
+    </select>
+
+    <select id="color1">
+      <option>Black</option><option>White</option><option>Black</option><option>Pink</option><option>Red</option><option>Blue</option><option>Brown</option>
+    </select>
+
+    <button onclick="addToCart('T-Shirt Black',10,'size1','color1')">
+      Add to Cart
+    </button>
+  </div>
+  <div class="product">
+    <img src="c:\Users\User\Pictures\shirt5.jpg" alt="Black Shirt">
+    <h3>T-Shirt</h3>
+    <p>$10</p>
+
+    <select id="size1">
+      <option>S</option><option>M</option><option>L</option><option>XL</option>
+    </select>
+
+    <select id="color1">
+      <option>Black</option><option>White</option><option>Black</option><option>Pink</option><option>Red</option><option>Blue</option><option>Brown</option>
+    </select>
+
+    <button onclick="addToCart('T-Shirt Black',10,'size1','color1')">
+      Add to Cart
+    </button>
+  </div>
+  <div class="product">
+    <img src="c:\Users\User\Pictures\shirt2.jpg" alt="White Shirt">
+    <h3>T-Shirt</h3>
+    <p>$12</p>
+
+    <select id="size2">
+      <option>S</option><option>M</option><option>L</option><option>XL</option>
+    </select>
+
+    <select id="color2">
+      <option>White</option><option>Black</option><option>Pink</option><option>Red</option><option>Blue</option><option>Brown</option>
+    </select>
+<section>
+ <button onclick="addToCart('T-Shirt Black',12,'size1','color1')">
+      Add to Cart
+    </button>
+  </div>
+  <div class="product">
+    <img src="c:\Users\User\Pictures\shirt4.jpg" alt="Black Shirt">
+    <h3>T-Shirt</h3>
+    <p>$10</p>
+
+    <select id="size1">
+      <option>S</option><option>M</option><option>L</option><option>XL</option>
+    </select>
+
+    <select id="color1">
+      <option>Black</option><option>White</option><option>Pink</option><option>Red</option><option>Blue</option><option>Brown</option>
+    </select>
+
+    <button onclick="addToCart('T-Shirt Black',10,'size1','color1')">
+      Add to Cart
+    </button>
+  </div>
+
+</section>
+<section class="cart">
+  <h2>🛒 Cart</h2>
+  <ul id="cartList"></ul>
+  <h3 id="total">Total: $0</h3>
+</section>
+<section class="checkout">
+  <h2>📦 Checkout</h2>
+  <input type="text" id="name" placeholder="Full Name">
+  <input type="text" id="phone" placeholder="Phone Number">
+  <input type="text" id="address" placeholder="Address">
+  <select id="payment">
+    <option>Cash on Delivery</option>
+    <option>ABA Pay</option>
+    <option>Wing</option>
+  </select>
+    <button onclick="checkout()">Place Order</button>
+</section>
+<script src="ass.j"></script>
+</body>
+</html>
